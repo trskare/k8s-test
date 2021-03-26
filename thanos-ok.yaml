@@ -1,0 +1,12 @@
+---
+# Source: thanos-operator/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: thanos-operator
+  labels:
+    helm.sh/chart: thanos-operator-0.1.1
+    app.kubernetes.io/name: thanos-operator
+    app.kubernetes.io/instance: thanos-operator                                                                                                                                                                                                     
+    app.kubernetes.io/version: "0.1.2"
+    app.kubernetes.io/managed-by: Helm
